@@ -1,0 +1,149 @@
+.leftbox{
+    background-color: #1269C7;
+    color: white;
+}
+.left-links span{
+    margin: 1rem;
+}
+.spacerPara{
+    text-align: center;
+}
+.container{
+    padding: 0;
+    
+    
+}
+.spacer-head{
+    font-weight: 700;
+}
+.error{
+    color: red;
+}
+.right-box input{
+    border: none;
+    border-bottom: 3px solid #bae0f0;
+}
+.right-box input:focus{
+    box-shadow: none;
+}
+.right-box-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+}
+.right-box label{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.rightboxterms{
+    color: #1269C7;
+    text-decoration: none;
+}
+.rightButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rightButtons button{
+    border: none;
+    color: white;
+    background-color: #1269C7;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+.rightButtons button:hover{
+    opacity: 1;
+}  
+.tick-mark {
+    position: absolute;
+    top: 50%;
+    right: 100px; /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    color: #1269C7; /* Color of the tick mark */
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+.shadow-pads{
+    padding: 0;
+
+}
+.right-box{
+    padding: 30px;
+}
+.name, .email, .password{
+    min-height: 95px;
+}
+.name-tick, .email-tick, .password-tick{
+    color: chartreuse;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+.tickparent{
+    position: relative;
+
+}
+.ctn-parent{
+    display: flex;
+    align-items: center;
+}
+.has-error{
+    color: red;
+}
+.has-success{
+    color: green;
+}
+.has-error .tick.red {
+    color: red;
+  }
+  
+  .has-success .tick.green {
+    color: green;
+  }
+
+  .red{
+    color: red;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+  }
+
+  .green{
+    color: green;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+  }
+  .mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the mainDiv takes up the full height of the viewport */
+  }
+@media (max-width: 768px) {
+    .leftbox {
+      display: none !important;
+    }
+    .right-box{
+        align-items: center;
+        
+    }
+    .container{
+            padding: 0;
+    }
+    .shadow-pads{
+        justify-content: center;
+    }
+    .mainDiv{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto;
+    }
+  }
+  @media (max-width: 375px){
+    .shadow-pads{
+        padding:30px ;
+    }
+    .mainDiv{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto;
+    }
+  }
